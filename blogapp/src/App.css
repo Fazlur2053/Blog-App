@@ -1,0 +1,261 @@
+
+*{
+  box-sizing: border-box;
+}
+a{
+  cursor: pointer;
+}
+body{
+  margin: 0;
+  color: #222;
+}
+img{
+  max-width: 100%;
+}
+
+main{
+ 
+  /* padding: 16px; */
+  max-width: 100%;
+  /* margin: 0 auto; */
+} 
+
+header{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom: 50px;
+  align-items: center;
+  height: 60px;
+  color: white;
+  background-color: #03083a;
+  padding: 40px;
+}
+
+.logodiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+header a{
+  text-decoration:none;
+  color: inherit;
+
+}
+div.createform{
+  margin:60px;
+  padding: 40px;
+}
+header a.logo{
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+header nav{
+  display:flex;
+  gap: 24px;
+}
+
+/* div.post{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  margin-bottom: 30px;
+} */
+.front{
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding: 14px;
+}
+.parent-front{
+  display: flex;
+  justify-content: center;
+}
+.post{
+  display: flex;
+  flex-direction: row;
+  background-color: #aaabc0;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  height: 500px;
+  overflow-y: hidden;
+  padding: 10px;
+  border-radius:'50px';
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: 25px;
+}
+
+div.post div.texts h2{
+  margin:0;
+  font-size: 2rem;
+}
+div.post div.texts a{
+  text-decoration:none;
+  color: inherit;
+}
+div.post p.info{
+  margin:24px 0;
+  color: #888;
+  font-size:1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+div.post p.info a.author{
+  color:#333;
+}
+div.post p.summary{
+  margin:10px 0;
+  line-height: 1.8rem;
+}
+
+form.login, form.register{
+  max-width: 400px;
+  margin: 0 auto;
+}
+form .login:hover{
+  transform: translateY(-5px);
+}
+form .register:hover{
+  transform: translateY(-5px);
+}
+input{
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+button{
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: #4a4f8b;
+  border:0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 0;
+}
+form.login h1, form.register h1{
+  text-align: center;
+}
+
+div.post div.image{
+  /* max-height:300px; */
+  display: flex;
+  overflow:hidden;
+padding: 20px;
+}
+div.post div.image img{
+   height: 301px;
+   object-fit: cover; 
+  object-position: center center;
+  width: 100%; 
+}
+
+div.post-page a{
+  color:#333;
+  text-decoration: underline;
+}
+div.post-page h1{
+  text-align: center;
+  margin: 10px 0 5px;
+}
+.read-more{
+  color: #766f6f;
+  font-size: medium;
+}
+.post-page{
+  margin-left: 100px;
+  margin-right: 100px;
+
+  padding: 0  40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.post-page .image img{
+   height: 500px;
+  width: 700px;
+}
+div.post-page time{
+  text-align: center;
+  display: block;
+  font-size:1rem;
+  color:#aaa;
+  margin: 10px 0;
+}
+div.post-page div.author{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: .7rem;
+  font-weight: bold;
+}
+div.content p{
+  line-height: 1.7rem;
+  margin: 30px 0;
+}
+div.content li{
+  margin-bottom: 10px;
+}
+div.edit-row{
+  display: flex;
+  gap: 9px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.post-page a.edit-btn{
+  background-color: #4a4f8b;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding:15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+a svg{
+  height:20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 40px;
+  margin: 0 50px;
+}
+.account{
+  font-size: medium;
+  color: #302a2a;
+  margin: 20px;
+
+}
+.loginn {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  background-color: #4a4f8b;
+  border-radius: 10px;
+}
+
+.loginn:active{
+  color: black;
+  cursor: pointer;
+}
+.post:hover{
+  background-color:#e0e1eb;
+  transform: translateY(-5px);
+}
